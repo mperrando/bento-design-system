@@ -53,7 +53,7 @@ export function ButtonLinkCell({
   return (
     <Inset spaceX={padding.paddingX} spaceY={padding.paddingY}>
       <Inline space={0} align={align}>
-        <ButtonLink size={size ?? "medium"} {...buttonProps} />
+        <ButtonLink size={size ?? config.typographySize.buttonLinkCell} {...buttonProps} />
       </Inline>
     </Inset>
   );
@@ -70,7 +70,7 @@ export function TextCell({
   const padding = config.padding.textCell ?? config.padding.defaultCell;
   return (
     <Box {...padding} textAlign={align}>
-      <Body size={size ?? "medium"} weight={weight} color={color}>
+      <Body size={size ?? config.typographySize.textCell} weight={weight} color={color}>
         {value}
       </Body>
     </Box>
@@ -115,7 +115,7 @@ export function TextWithIconCell({
         ) : (
           icon_
         )}
-        <Body size={size ?? "medium"} weight={weight} color={color}>
+        <Body size={size ?? config.typographySize.textWithIconCell} weight={weight} color={color}>
           {text}
         </Body>
       </Inline>
@@ -140,7 +140,7 @@ export function LabelCell({ value, column: { align } }: CellProps<{}, LocalizedS
   const padding = config.padding.labelCell ?? config.padding.defaultCell;
   return (
     <Box {...padding} textAlign={align}>
-      <Label size="large">{value}</Label>
+      <Label size={config.typographySize.labelCell}>{value}</Label>
     </Box>
   );
 }
@@ -156,7 +156,7 @@ export function LinkCell({
   const padding = config.padding.linkCell ?? config.padding.defaultCell;
   return (
     <Box {...padding} textAlign={align}>
-      <Body size={size ?? "medium"} weight={weight}>
+      <Body size={size ?? config.typographySize.linkCell} weight={weight}>
         <Link {...value} />
       </Body>
     </Box>

@@ -55,7 +55,7 @@ export function custom<A extends string, V, D extends Record<string, unknown>>({
         const value = missingValue ?? defaultMessages.Table.missingValue;
         return (
           <Box {...config.padding.defaultCell} textAlign={options.align}>
-            <Body size="medium">{value}</Body>
+            <Body size={config.typographySize.defaultCell}>{value}</Body>
           </Box>
         );
       } else {

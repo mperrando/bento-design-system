@@ -527,6 +527,16 @@ export const table: TableConfig = {
     iconCell: { paddingX: 16, paddingY: 16 },
     iconButtonCell: { paddingX: 16, paddingY: 16 },
   },
+  typographySize: {
+    header: "large",
+    footer: "large",
+    defaultCell: "medium",
+    buttonLinkCell: "medium",
+    textCell: "medium",
+    textWithIconCell: "medium",
+    labelCell: "large",
+    linkCell: "medium",
+  },
   boundaryPadding: 8,
   columnDividers: false,
 };

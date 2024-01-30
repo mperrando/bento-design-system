@@ -1,3 +1,4 @@
+import { TypographySize } from "src/Typography/TypographyProps";
 import { TooltipPlacement } from "../Field/FieldProps";
 import { IconProps } from "../Icons";
 import { BentoSprinkles } from "../internal";
@@ -35,6 +36,16 @@ export type TableConfig = {
     linkCell: CellPaddingConfig | undefined;
     iconCell: CellPaddingConfig | undefined;
     iconButtonCell: CellPaddingConfig | undefined;
+  };
+  typographySize: {
+    header: TypographySize;
+    footer: TypographySize;
+    defaultCell: TypographySize;
+    buttonLinkCell: TypographySize;
+    textCell: TypographySize;
+    textWithIconCell: TypographySize;
+    labelCell: TypographySize;
+    linkCell: TypographySize;
   };
   boundaryPadding: BentoSprinkles["padding"];
   columnDividers: boolean;
