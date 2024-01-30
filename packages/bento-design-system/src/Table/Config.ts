@@ -3,6 +3,7 @@ import { TooltipPlacement } from "../Field/FieldProps";
 import { IconProps } from "../Icons";
 import { BentoSprinkles } from "../internal";
 import { vars } from "../vars.css";
+import { ButtonSize } from "src";
 
 type CellPaddingConfig = {
   paddingX: BentoSprinkles["paddingX"];
@@ -47,6 +48,7 @@ export type TableConfig = {
     labelCell: TypographySize;
     linkCell: TypographySize;
   };
+  buttonSize: ButtonSize;
   boundaryPadding: BentoSprinkles["padding"];
   columnDividers: boolean;
 };

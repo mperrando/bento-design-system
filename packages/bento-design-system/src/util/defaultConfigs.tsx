@@ -537,6 +537,7 @@ export const table: TableConfig = {
     labelCell: "large",
     linkCell: "medium",
   },
+  buttonSize: "large",
   boundaryPadding: 8,
   columnDividers: false,
 };

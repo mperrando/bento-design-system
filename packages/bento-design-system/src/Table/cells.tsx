@@ -35,7 +35,7 @@ export function ButtonCell({
   return (
     <Inset spaceX={padding.paddingX} spaceY={padding.paddingY}>
       <Inline space={0} align={align} alignY="center">
-        <Button size={size ?? "medium"} {...buttonProps} />
+        <Button size={size ?? config.buttonSize} {...buttonProps} />
       </Inline>
     </Inset>
   );
