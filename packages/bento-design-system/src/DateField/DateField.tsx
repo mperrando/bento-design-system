@@ -22,7 +22,7 @@ type SingleDateFieldProps = {
 } & FieldProps<Date | null>;
 type RangeDateFieldProps = {
   type: "range";
-  shortcuts?: ShortcutProps<[Date, Date]>[];
+  shortcuts?: ShortcutProps<[Date, Date] | null>[];
 } & FieldProps<[Date, Date] | null>;
 type Props = (SingleDateFieldProps | RangeDateFieldProps) & {
   minDate?: Date;
